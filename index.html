@@ -21,27 +21,33 @@
 			.get-directions-button {
 				border: 1px solid #74b1c1;
 				background-color: transparent;
-				padding: 5px 15px;
+				padding: 10px 20px;
 				letter-spacing: 2px;
-				color: #74b1c1;
+				background: #74b1c1;
+				color: #fff;
 				cursor: pointer;
 				position: absolute;
 				left: 50%;
 				bottom: 0;
-				transform: translate(-50%, -12em);
+				transform: translate(-50%, -150px);
+				border-radius: 4px;
 			}
-      @media only screen and (max-width: 600px) {
-        .centered-video {
-          width: 100%;
-          position: absolute;
-          margin: 0;
-          top: 50%;
-          transform: translateY(-50%);
-        }
-        .centered-video > video {
-          max-width: 100%;
-        }
-      }
+			@media only screen and (max-width: 600px) {
+				.centered-video {
+					width: 100%;
+					position: absolute;
+					margin: 0;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+				.centered-video > video {
+					max-width: 100%;
+				}
+				.get-directions-button {
+					transform: translate(-50%, -9em);
+					font-size: 70%;
+				}
+			}
 		</style>
 	</head>
 	<body>
@@ -50,9 +56,12 @@
 				<source src="engagement.mp4" type="video/mp4" />
 				<img src="engagement_fallback.png" alt="Engagement Photo" />
 			</video>
-      <a href="https://www.google.com/maps/dir//Hebbar+Sreevaishnava+Sabha,+22,+Seshadri+Rd,+Gandhi+Nagar,+Bengaluru,+Karnataka+560009/@12.9802424,77.5741109,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae16108c723db3:0xe08369b8192d6b25!2m2!1d77.5762996!2d12.9802372" target="_blank">
-        <button class="get-directions-button">GET DIRECTIONS</button>
-      </a>
+			<a
+				href="https://www.google.com/maps/dir//Hebbar+Sreevaishnava+Sabha,+22,+Seshadri+Rd,+Gandhi+Nagar,+Bengaluru,+Karnataka+560009/@12.9802424,77.5741109,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae16108c723db3:0xe08369b8192d6b25!2m2!1d77.5762996!2d12.9802372"
+				target="_blank"
+			>
+				<button class="get-directions-button">GET DIRECTIONS</button>
+			</a>
 		</div>
 	</body>
 </html>
