@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Engagement Invitation</title>
+		<style>
+			html {
+				background-color: #fffbef;
+			}
+			.centered-video {
+				position: relative;
+				width: 600px;
+				margin: 2em auto;
+				box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.1);
+			}
+			.centered-video > video {
+				vertical-align: middle;
+			}
+			.get-directions-button {
+				border: 1px solid #74b1c1;
+				background-color: transparent;
+				padding: 5px 15px;
+				letter-spacing: 2px;
+				color: #74b1c1;
+				cursor: pointer;
+				position: absolute;
+				left: 50%;
+				bottom: 0;
+				transform: translate(-50%, -12em);
+			}
+      @media only screen and (max-width: 600px) {
+        .centered-video {
+          width: 100%;
+          position: absolute;
+          margin: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        .centered-video > video {
+          max-width: 100%;
+        }
+      }
+		</style>
+	</head>
+	<body>
+		<div class="centered-video">
+			<video id="mainVideo" width="600" autoplay muted>
+				<source src="engagement.mp4" type="video/mp4" />
+				<img src="engagement_fallback.png" alt="Engagement Photo" />
+			</video>
+      <a href="https://www.google.com/maps/dir//Hebbar+Sreevaishnava+Sabha,+22,+Seshadri+Rd,+Gandhi+Nagar,+Bengaluru,+Karnataka+560009/@12.9802424,77.5741109,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae16108c723db3:0xe08369b8192d6b25!2m2!1d77.5762996!2d12.9802372" target="_blank">
+        <button class="get-directions-button">GET DIRECTIONS</button>
+      </a>
+		</div>
+	</body>
+</html>
