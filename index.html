@@ -29,6 +29,9 @@
 			html {
 				background-color: #fffbef;
 			}
+      body {
+        margin: 0;
+      }
 			.centered-video {
 				position: relative;
 				width: 600px;
@@ -36,12 +39,8 @@
 				box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.1);
 			}
 			.centered-video > video {
+        max-width: 600px;
 				vertical-align: middle;
-			}
-			.dummy-placeholder-image {
-				visibility: hidden;
-				opacity: 0;
-				width: 100%;
 			}
 			.get-directions-button {
 				border: 1px solid #74b1c1;
@@ -96,7 +95,7 @@
 	</head>
 	<body>
 		<div class="centered-video">
-			<video id="mainVideo" width="600" autoplay muted playsinline>
+			<video id="mainVideo" autoplay muted playsinline>
 				<source src="engagement.mp4" type="video/mp4" />
 				<img src="engagement_fallback.png" alt="Engagement Photo" />
 			</video>
