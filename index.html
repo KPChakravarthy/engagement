@@ -6,13 +6,25 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<title>Engagement Invitation</title>
-    <meta name="description" content="Invitation for the engagement of Krishna Prasad C and Nithya Aathreya.">
-    <meta property="og:title" content="Engagement Invitation" />
-    <meta property="og:url" content="https://kpchakravarthy.github.io/engagement/" />
-    <meta property="og:description" content="Invitation for the engagement of Krishna Prasad C and Nithya Aathreya.">
-    <meta property="og:image" content="https://www.rockher.com/wp/wp-content/uploads/2018/11/shutterstock_550244896-300x200.jpg">
-    <meta property="og:type" content="website" />
-    
+		<meta
+			name="description"
+			content="Invitation for the engagement of Krishna Prasad C and Nithya Aathreya."
+		/>
+		<meta property="og:title" content="Engagement Invitation" />
+		<meta
+			property="og:url"
+			content="https://kpchakravarthy.github.io/engagement/"
+		/>
+		<meta
+			property="og:description"
+			content="Invitation for the engagement of Krishna Prasad C and Nithya Aathreya."
+		/>
+		<meta
+			property="og:image"
+			content="https://www.rockher.com/wp/wp-content/uploads/2018/11/shutterstock_550244896-300x200.jpg"
+		/>
+		<meta property="og:type" content="website" />
+
 		<style>
 			html {
 				background-color: #fffbef;
@@ -26,6 +38,11 @@
 			.centered-video > video {
 				vertical-align: middle;
 			}
+			.dummy-placeholder-image {
+				visibility: hidden;
+				opacity: 0;
+				width: 100%;
+			}
 			.get-directions-button {
 				border: 1px solid #74b1c1;
 				background-color: transparent;
@@ -35,12 +52,26 @@
 				color: #fff;
 				cursor: pointer;
 				position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+				left: 50%;
+				transform: translateX(-50%);
 				bottom: 17%;
 				margin: auto;
 				border-radius: 4px;
+
+        opacity: 0;
+        animation: showButtonSlow 1s linear forwards;
+        animation-delay: 500ms;
 			}
+      @keyframes showButtonSlow {
+        0% {
+          opacity: 0;
+          transform: translateX(-50%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(-50%);
+        }
+      }
 			@media only screen and (max-width: 600px) {
 				.centered-video {
 					width: 100%;
