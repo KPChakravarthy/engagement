@@ -27,9 +27,10 @@
 				color: #fff;
 				cursor: pointer;
 				position: absolute;
-				left: 50%;
-				bottom: 0;
-				transform: translate(-50%, -150px);
+        left: 50%;
+        transform: translateX(-50%);
+				bottom: 17%;
+				margin: auto;
 				border-radius: 4px;
 			}
 			@media only screen and (max-width: 600px) {
@@ -44,8 +45,12 @@
 					max-width: 100%;
 				}
 				.get-directions-button {
-					transform: translate(-50%, -9em);
 					font-size: 70%;
+				}
+			}
+			@media only screen and (max-width: 330px) {
+				.get-directions-button {
+					font-size: 50%;
 				}
 			}
 		</style>
